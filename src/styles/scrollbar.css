@@ -1,0 +1,32 @@
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Apply custom scrollbar to sidebar */
+.sidebar-scrollarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-scrollarea::-webkit-scrollbar-thumb {
+  background: hsl(var(--sidebar-border));
+  border-radius: 5px;
+}
+
+.sidebar-scrollarea::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--sidebar-ring));
+}
